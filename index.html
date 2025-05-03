@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Car & Insurance Information Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contribution {
+            background-color: #eaf2f8;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .code-example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AI-Powered Car & Insurance Information Platform</h1>
+</header>
+
+<section>
+    <h2>Project Overview</h2>
+    <p>The <strong>AI-Powered Car & Insurance Information Platform</strong> empowers users to search car details, compare models, and estimate insurance premiums using AI. The system uses LLMs such as OpenAI's ChatGPT or Mistral to provide intelligent, natural-language responses tailored to user needs.</p>
+    <p><strong>My Contribution:</strong> I worked on building the core Flask API, implementing LLM integration for car and insurance queries, building comparison logic, and refining the chatbot interaction for follow-up queries. I also contributed to the UI using Tailwind CSS and ensured the responses were user-friendly and informative.</p>
+</section>
+
+<section>
+    <h2>Sprint Objectives Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sprint</th>
+                <th>Objective</th>
+                <th>Outcome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sprint 1</strong></td>
+                <td>MVP Backend Setup: Implement basic Flask routes for car queries and OpenAI integration.</td>
+                <td>Completed initial endpoints for car searches with working LLM responses.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 2</strong></td>
+                <td>Develop Comparison and Insurance Logic: Add multiple car input handling and insurance estimate flow.</td>
+                <td>Built comparison engine, added structured AI prompts, and created insurance estimator.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 3</strong></td>
+                <td>Build Chatbot & Follow-up Handling: Enable AI-driven chatbot interface with memory.</td>
+                <td>Integrated chatbot flow with query memory and dynamic response support.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 4</strong></td>
+                <td>Finalize UI & System Testing: Tailwind-based UI, formatting, testing, and responsiveness.</td>
+                <td>Completed UI design, added test cases, and finalized formatting and performance tuning.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Summarized User Story / Task Section</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sprint</th>
+                <th>User Story/Task</th>
+                <th>Key Tasks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sprint 1</strong></td>
+                <td><strong>SC1.1</strong>: Implement Car Search and AI Query Handling</td>
+                <td>Built Flask endpoint, OpenAI/Mistral integration, query handling, unit testing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 2</strong></td>
+                <td><strong>SC1.2</strong>: Develop AI-Based Car Comparison System</td>
+                <td>Multi-car query handler, AI prompt design, structured comparison formatting.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><strong>SC1.3</strong>: Implement AI-Based Insurance Estimations</td>
+                <td>Flask route, insurance logic, AI response formatting.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 3</strong></td>
+                <td><strong>SC1.4</strong>: Build LLM-Powered Chatbot for Car & Insurance Queries</td>
+                <td>Chatbot Flask route, memory management, follow-up logic, testing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sprint 4</strong></td>
+                <td><strong>SC1.5</strong>: Final UI Styling and Testing</td>
+                <td>Tailwind UI formatting, structured response cards, bug fixes.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="contribution">
+    <h2>Contributions</h2>
+    <p><strong>GitHub Repository:</strong> <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform" target="_blank">AI-Powered Car & Insurance Information Platform</a></p>
+
+    <h3>Code Contributions</h3>
+    <p>Here are some key snippets showcasing my contributions:</p>
+
+    <div class="code-example">
+        <p><strong>Car Query Handler:</strong> <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform/blob/main/app.py" target="_blank">Code Example</a></p>
+    </div>
+
+    <div class="code-example">
+        <p><strong>Comparison Engine:</strong> <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform/commit/48df002862a24cb55c4785cd921a0cbfdc8f2c85" target="_blank">Code Example</a></p>
+    </div>
+
+    <div class="code-example">
+        <p><strong>Insurance Estimation Logic:</strong> <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform/commit/48df002862a24cb55c4785cd921a0cbfdc8f2c85" target="_blank">Code Example</a></p>
+    </div>
+
+    <div class="code-example">
+        <p><strong>Chatbot Follow-up Handling:</strong> <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform/commit/48df002862a24cb55c4785cd921a0cbfdc8f2c85" target="_blank">Code Example</a></p>
+    </div>
+</section>
+
+<section>
+    <h2>Appendix</h2>
+    <h3>All Commits</h3>
+    <p>Here is the full list of commits associated with this project. Each commit links directly to the respective commit in the GitHub repository:</p>
+    <ul>
+        <li><strong>Sprint 1</strong>: Flask setup, car query API, OpenAI/Mistral integration.</li>
+        <li><strong>Sprint 2</strong>: Added comparison and insurance logic.</li>
+        <li><strong>Sprint 3</strong>: Built chatbot memory and follow-up response logic.</li>
+        <li><strong>Sprint 4</strong>: Finalized UI and did testing.</li>
+    </ul>
+    <p>You can view all commits on the <a href="https://github.com/Bharadwajnaik9848/AI-Powered-Car-Insurance-Information-Platform/commits" target="_blank">GitHub repository commit page</a>.</p>
+</section>
+
+<footer>
+    <p>© 2025 AI-Powered Car & Insurance Information Platform. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
 
